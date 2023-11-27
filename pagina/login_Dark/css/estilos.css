@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #181818;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.content{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logo{
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span{
+    color: #d30;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 10px #bbb3 ;
+}
+
+.contact-wrapper > *{
+    padding: 1em;
+}
+
+.contact-form{
+    background-color: #222;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block{
+    grid-column: 1/-1;
+}
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+
+
+.contact-form button,
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: solid 1px #a30;
+    outline: none;
+    color: #fff;
+}
+
+.contact-form button{
+    background-color: #a22;
+    border: none;
+    text-transform: uppercase;
+    padding: 1em;
+    color: #000;
+    transition: all .1s ease-in-out;
+}
+
+.contact-form button:hover,
+.contact-form button:focus{
+    background-color: #611;
+    color: #fff;
+}
+
+.contact-info{
+    background-color: #000;
+}
+
+.contact-form ul,
+.contact-info p,
+.contact-info h3{
+    text-align: center; 
+    padding:  0 0 1em 0;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: .2em;
+    text-align: center;
+}
+
+.contact-info p:first-child{
+    text-align: justify;
+}
+
+@media screen and (min-width:800px) {
+
+    body{
+        padding: 0 1.5em;
+    }
+
+    .content{
+        padding: 3em;
+    }
+
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+    }
+
+    .contact-wrapper > *{
+        padding: 3em;
+    }
+
+    .contact-info h3,
+    .contact-info ul,
+    .contact-info p{
+        padding: 1em 0;
+    }
+
+    .contact-info h3,
+    .contact-info ul li,
+    .contact-info p{
+        text-align: left;
+    }
+
+}

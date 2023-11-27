@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(../img/Backgruop.jpeg);
+    background-size: 25rem;
+    color: #fff;
+}
+
+
+h1 {
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+a.nav-link{
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.text-Morado1 {
+    color: rgb(185, 124, 241);
+}
+
+.text-justificado{
+    text-align: justify;
+}
+
+.shadow-card{
+    box-shadow: 0 0 10px #fff4;
+    transition: all ease .3s;
+}
+
+.shadow-card:hover{
+    box-shadow: 0 0 10px #fffa;
+}
+
+
+.btn{
+    background-color: rgb(185, 124, 241);
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: rgb(94, 48, 138);
+    color: #fff;
+    font-size: 1.2em;
+}
+
+#titulo2{
+    color: rgb(224, 199, 247);
+    font-weight: bold;
+}
+
+
+#carateristica{
+    margin: 20em 0;
+}
+
+#Pajinas{
+    margin: 20em 0;
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+       
+}
