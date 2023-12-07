@@ -1,0 +1,108 @@
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+body{
+  font-family: 'Cantarell', sans-serif;
+  background: #fef;
+}
+
+header{
+  padding: 10px;
+  font-weight: bold;
+  background: #fae5;
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-family: 'Whisper';
+  color: #f33;
+}
+
+.temp-img{
+	width: 100%;
+	height: 150px;
+	background: #aaaaaa;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.modal {
+	background: #000a;
+}
+
+.md-enabled {
+	display: block;
+}
+
+.modal-dialog {
+  margin: auto;
+}
+.precio {
+	color : #4cbf4c;
+}
+
+.precio-tachado{
+	text-decoration: line-through;	
+	color : #aaa;
+	font-size: .8em;
+	height: 1rem;
+	margin: 0 5px
+}
+
+
+.ingredientes{
+  list-style: none;
+  padding: 10px;
+}
+
+.ingredientes li{
+  text-align: left;
+
+	width: 100%;
+	margin: auto;
+	padding: 10px 0;
+	color : #333;
+	font-style: italic;
+}
+
+.bd {
+	border: 1px solid #000
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 350px;
+}
+
+
+#btn-mostrar-carrito {
+  background: #ffd8f9;
+  border : 2px solid #fff;
+  color: #f34;
+  border-radius: 10;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  box-shadow: 0 0 10px #0003;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  z-index: 999;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-car:hover{
+  background: #f7a;
+  color: #fff;
+}

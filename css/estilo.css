@@ -77,6 +77,11 @@ a.nav-link{
     margin: 20em 0;
 }
 
+.card img {
+  height: 25em;
+  object-fit: cover;
+}
+
 @media screen and (max-width:500px) {
     h1 {
         font-size: 2em;
@@ -95,3 +100,4 @@ a.nav-link{
     }
        
 }
+
