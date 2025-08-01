@@ -1,0 +1,36 @@
+// color scheme
+$color0: #2c1c2c;
+$color1: #a6bde8;
+$color2: #5872bc;
+$color3: #6cb4a3;
+$color4: #e38b88;
+$color5: #bd2c4c;
+$color6: #9575cd;
+$color7: #d2d7de;
+
+$gray1: #332133;
+$gray2: #3f2a3f;
+$gray3: #4f314f;
+$gray4: #7a517a;
+
+@mixin nav-btn($color: $color7) {
+  border: 2px solid $color;
+  a {
+    color: $color;
+  }
+}
+
+@mixin nav-btn-hover($color: $color7) {
+  background-color: $color;
+  cursor: pointer;
+  a {
+    color: $color0;
+  }
+}
+
+@font-face {
+  font-family: "BigBlueTerm";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/BigBlueTermPlusNerdFont-Regular.ttf");
+}

@@ -1,0 +1,116 @@
+@use "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: variables.$color0;
+  color: variables.$color7;
+  width: 99vw;
+  height: 99vh;
+  font-family: "BigBlueTerm";
+}
+
+.max-size {
+  border: 1px solid red;
+  width: 90%;
+  max-width: 1000px;
+  height: 99vh;
+  max-height: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+main {
+  border: 1px solid blue;
+  width: 70%;
+  height: auto;
+}
+
+aside {
+  width: 30%;
+  border: 1px solid green;
+}
+
+@media (max-width: 576px) {
+  .max-size {
+    border: 1px solid blue;
+    display: block;
+    width: 100%;
+  }
+
+  main {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+  }
+
+  aside {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+  }
+}
+
+/// nav
+nav {
+  border: 1px solid red;
+  width: 100%;
+
+  ul {
+    li {
+      margin: auto;
+      width: 80%;
+      text-align: center;
+      margin: 10px auto;
+      padding: 5px;
+
+      a {
+        text-decoration: none;
+        color: variables.$color7;
+      }
+    }
+
+    li:first-child {
+      @include variables.nav-btn(variables.$color1);
+      &:hover {
+        @include variables.nav-btn-hover(variables.$color1);
+      }
+    }
+    li:nth-child(2) {
+      @include variables.nav-btn(variables.$color2);
+      &:hover {
+        @include variables.nav-btn-hover(variables.$color2);
+      }
+    }
+    li:nth-child(3) {
+      @include variables.nav-btn(variables.$color3);
+      &:hover {
+        @include variables.nav-btn-hover(variables.$color3);
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    width: 80%;
+    margin: auto;
+    ul {
+      display: flex;
+      li {
+        width: 100%;
+        margin: 10px;
+      }
+    }
+  }
+}

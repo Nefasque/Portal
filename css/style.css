@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "BigBlueTerm";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/BigBlueTermPlusNerdFont-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #2c1c2c;
+  color: #d2d7de;
+  width: 99vw;
+  height: 99vh;
+  font-family: "BigBlueTerm";
+}
+
+.max-size {
+  border: 1px solid red;
+  width: 90%;
+  max-width: 1000px;
+  height: 99vh;
+  max-height: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+main {
+  border: 1px solid blue;
+  width: 70%;
+  height: auto;
+}
+
+aside {
+  width: 30%;
+  border: 1px solid green;
+}
+
+@media (max-width: 576px) {
+  .max-size {
+    border: 1px solid blue;
+    display: block;
+    width: 100%;
+  }
+  main {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+  }
+  aside {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+  }
+}
+nav {
+  border: 1px solid red;
+  width: 100%;
+}
+nav ul li {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #d2d7de;
+}
+nav ul li:first-child {
+  border: 2px solid #a6bde8;
+}
+nav ul li:first-child a {
+  color: #a6bde8;
+}
+nav ul li:first-child:hover {
+  background-color: #a6bde8;
+  cursor: pointer;
+}
+nav ul li:first-child:hover a {
+  color: #2c1c2c;
+}
+nav ul li:nth-child(2) {
+  border: 2px solid #5872bc;
+}
+nav ul li:nth-child(2) a {
+  color: #5872bc;
+}
+nav ul li:nth-child(2):hover {
+  background-color: #5872bc;
+  cursor: pointer;
+}
+nav ul li:nth-child(2):hover a {
+  color: #2c1c2c;
+}
+nav ul li:nth-child(3) {
+  border: 2px solid #6cb4a3;
+}
+nav ul li:nth-child(3) a {
+  color: #6cb4a3;
+}
+nav ul li:nth-child(3):hover {
+  background-color: #6cb4a3;
+  cursor: pointer;
+}
+nav ul li:nth-child(3):hover a {
+  color: #2c1c2c;
+}
+
+@media (max-width: 576px) {
+  nav {
+    width: 80%;
+    margin: auto;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
