@@ -39,7 +39,8 @@ h3 {
   h2 {
     font-size: 1.4em;
   }
-  p,a {
+  p,
+  a {
     font-size: 1.2em;
   }
 }
@@ -56,11 +57,13 @@ h3 {
 
 main {
   width: 65%;
-  height: auto;
+  height: 90vh;
+  z-index: 100;
 }
 
 aside {
   width: 35%;
+  z-index: 50;
 }
 
 @media (max-width: 576px) {
@@ -71,15 +74,18 @@ aside {
 
   main {
     position: absolute;
-    width: 99%;
-    height: 99%;
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 5rem;
   }
 
   aside {
     position: absolute;
     width: 99%;
     height: 99%;
-
   }
 }
 
@@ -105,19 +111,28 @@ nav {
     li:first-child {
       @include variables.nav-btn(variables.$color1);
       &:hover {
-        @include variables.nav-btn-hover(variables.$color1);
+        @include variables.nav-btn-active(variables.$color1);
+      }
+      &.btn-active {
+        @include variables.nav-btn-active(variables.$color1);
       }
     }
     li:nth-child(2) {
       @include variables.nav-btn(variables.$color2);
       &:hover {
-        @include variables.nav-btn-hover(variables.$color2);
+        @include variables.nav-btn-active(variables.$color2);
+      }
+      &.btn-active {
+        @include variables.nav-btn-active(variables.$color2);
       }
     }
     li:nth-child(3) {
       @include variables.nav-btn(variables.$color3);
       &:hover {
-        @include variables.nav-btn-hover(variables.$color3);
+        @include variables.nav-btn-active(variables.$color3);
+      }
+      &.btn-active {
+        @include variables.nav-btn-active(variables.$color3);
       }
     }
   }
@@ -156,7 +171,7 @@ nav {
   padding-top: 0;
   margin: 20px 0;
 
-  h2 {
+  .box1-title {
     color: variables.$color5;
     position: relative;
     top: -13px;
@@ -165,7 +180,7 @@ nav {
     display: inline-block;
   }
 
-  div {
+  .box1-content {
     padding: 0 3px;
     padding-bottom: 10px;
   }
@@ -182,37 +197,83 @@ nav {
     }
   }
 
-  li:first-child{
-    a:before{
+  li:first-child {
+    a:before {
       content: "󰊤 ";
       font-size: 1.2em;
     }
   }
-  li:nth-child(2){
-    a:before{
+  li:nth-child(2) {
+    a:before {
       content: " ";
       font-size: 1.2em;
     }
   }
-  li:nth-child(3){
-    a:before{
+  li:nth-child(3) {
+    a:before {
       content: "󰇮 ";
       font-size: 1.2em;
     }
   }
 }
-
-.img-avatar{
+.img-avatar {
   width: 100%;
   height: auto;
+  min-height: 10rem;
   max-width: 15rem;
   overflow: hidden;
   margin: auto;
 
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
 
+/// modal pages
+.modal-pages {
+  max-height: 94vh;
+  background-color: variables.$color0;
+  display: none;
+
+  div {
+    overflow: scroll;
+    max-height: 90vh;
+  }
+
+  &:first-child{
+    border-color: variables.$color1;
+    .box1-title{
+      color: variables.$color1;
+    }
+  }
+  &:nth-of-type(2){
+    border-color: variables.$color2;
+    .box1-title{
+      color: variables.$color2;
+    }
+  }
+  &:nth-of-type(3){
+    border-color: variables.$color3;
+    .box1-title{
+      color: variables.$color3;
+    }
+  }
+}
+
+.active {
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .modal-pages {
+    height: 85vh;
+    background-color: variables.$color0;
+
+    div {
+      overflow: scroll;
+      height: 80vh;
+    }
+  }
+}

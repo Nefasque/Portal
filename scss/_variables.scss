@@ -20,7 +20,7 @@ $gray4: #7a517a;
   }
 }
 
-@mixin nav-btn-hover($color: $color7) {
+@mixin nav-btn-active($color: $color7) {
   background-color: $color;
   cursor: pointer;
   a {
