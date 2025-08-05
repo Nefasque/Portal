@@ -14,7 +14,7 @@ ul {
 body {
   background-color: variables.$color0;
   color: variables.$color7;
-  height: 99vh;
+  height: 99%;
   font-family: "BigBlueTerm";
 }
 
@@ -34,14 +34,14 @@ h3 {
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   h2 {
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
   p,
   a {
-    font-size: 1.2em;
+    font-size: .8em;
   }
 }
 
@@ -53,11 +53,13 @@ h3 {
   margin: auto;
   display: flex;
   flex-wrap: no-wrap;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 main {
   width: 65%;
-  height: 90vh;
+  height: 99%;
   z-index: 100;
 }
 
@@ -70,12 +72,13 @@ aside {
   .max-size {
     display: block;
     width: 100%;
+    height: 80vh;
   }
 
   main {
     position: absolute;
     width: 95%;
-    height: 90%;
+    height: 80%;
     margin: auto;
     left: 0;
     right: 0;
@@ -233,30 +236,34 @@ nav {
 
 /// modal pages
 .modal-pages {
-  max-height: 94vh;
+  max-height: 100%;
   background-color: variables.$color0;
   display: none;
 
   div {
     overflow: scroll;
-    max-height: 90vh;
+    max-height: 83vh;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
-  &:first-child{
+  &:first-child {
     border-color: variables.$color1;
-    .box1-title{
+    .box1-title {
       color: variables.$color1;
     }
   }
-  &:nth-of-type(2){
+  &:nth-of-type(2) {
     border-color: variables.$color2;
-    .box1-title{
+    .box1-title {
       color: variables.$color2;
     }
   }
-  &:nth-of-type(3){
+  &:nth-of-type(3) {
     border-color: variables.$color3;
-    .box1-title{
+    .box1-title {
       color: variables.$color3;
     }
   }
@@ -268,12 +275,12 @@ nav {
 
 @media (max-width: 576px) {
   .modal-pages {
-    height: 85vh;
+    height: 90%;
     background-color: variables.$color0;
 
     div {
       overflow: scroll;
-      height: 80vh;
+      height: 90%;
     }
   }
 }
