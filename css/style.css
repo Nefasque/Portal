@@ -4,6 +4,203 @@
   font-weight: 400;
   src: url("../fonts/BigBlueTermPlusNerdFont-Regular.ttf");
 }
+ul {
+  list-style-type: none;
+}
+
+.tree {
+  line-height: 2rem;
+}
+.tree > li:after, .tree > li:before {
+  display: none;
+}
+.tree details:hover ul li::after,
+.tree details:hover ul li::before {
+  border-color: #9575cd;
+}
+.tree summary {
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 1rem;
+}
+.tree summary::marker, .tree summary::-webkit-details-marker {
+  display: none;
+}
+.tree li {
+  position: relative;
+  margin-left: 20px;
+  padding: 0 5px;
+}
+.tree li:before {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  border-left: 2px solid #4f314f;
+  border-bottom: 2px solid #4f314f;
+  content: "";
+  width: 8px;
+  height: 1rem;
+}
+.tree li::after {
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  border-left: 2px solid #4f314f;
+  content: "";
+  width: 8px;
+  height: 100%;
+}
+.tree li:last-child::after {
+  display: none;
+}
+.tree li span::before {
+  content: "";
+  padding-right: 0.4rem;
+  font-size: 1.3rem;
+}
+
+details summary {
+  color: #7a517a;
+}
+details summary::before {
+  content: "\f105";
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
+}
+details[open] > summary {
+  color: #9575cd;
+}
+details[open] > summary::before {
+  content: "\f107";
+}
+
+li.li-html {
+  color: #bd2c4c;
+}
+li.li-html span::before {
+  content: "\f13b";
+}
+
+li.li-css {
+  color: #a6bde8;
+}
+li.li-css span::before {
+  content: "\f031c";
+}
+
+li.li-sass {
+  color: #f5a5cd;
+}
+li.li-sass span::before {
+  content: "\e603";
+}
+
+li.li-js {
+  color: #e3db88;
+}
+li.li-js span::before {
+  content: "\f2ee";
+}
+
+li.li-bash {
+  color: #6cb4a3;
+}
+li.li-bash span::before {
+  content: "\e760";
+}
+
+li.li-lua {
+  color: #a6bde8;
+}
+li.li-lua span::before {
+  content: "\e620";
+}
+
+li.li-server {
+  color: #a6bde8;
+}
+li.li-server span::before {
+  content: "\f048b";
+}
+
+li.li-other {
+  color: #d2d7de;
+}
+li.li-other span::before {
+  content: "\f0214";
+}
+
+li.li-linux {
+  color: #e3db88;
+}
+li.li-linux span::before {
+  content: "\e779\f17c";
+  font-style: bold;
+}
+
+li.li-vim {
+  color: #6cb4a3;
+}
+li.li-vim span::before {
+  content: "\e62b";
+}
+
+li.li-git {
+  color: #bd2c4c;
+}
+li.li-git span::before {
+  content: "\e702";
+}
+
+li.li-gimp {
+  color: #e38b88;
+}
+li.li-gimp span::before {
+  content: "\f338";
+}
+
+li.li-inkscape {
+  color: #a6bde8;
+}
+li.li-inkscape span::before {
+  content: "\e801";
+}
+
+li.li-pixelorama {
+  color: #6cb4a3;
+}
+li.li-pixelorama span::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.4rem;
+  width: 0.7rem;
+  height: 1rem;
+  background-image: url("../img/PixeloramaPortable_128.png");
+  background-size: 100%;
+  background-size: cover;
+}
+
+li.li-synsig {
+  color: #a6bde8;
+}
+li.li-synsig span::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.4rem;
+  width: 0.7rem;
+  height: 1rem;
+  background-image: url("../img/synfig-studio.png");
+  background-size: 100%;
+  background-size: cover;
+}
+
+li.li-paint {
+  color: #e38b88;
+}
+li.li-paint span::before {
+  content: "\f1fc";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -130,20 +327,20 @@ nav ul li:first-child.btn-active a {
   color: #2c1c2c;
 }
 nav ul li:nth-child(2) {
-  border: 2px solid #5872bc;
+  border: 2px solid #e3db88;
 }
 nav ul li:nth-child(2) a {
-  color: #5872bc;
+  color: #e3db88;
 }
 nav ul li:nth-child(2):hover {
-  background-color: #5872bc;
+  background-color: #e3db88;
   cursor: pointer;
 }
 nav ul li:nth-child(2):hover a {
   color: #2c1c2c;
 }
 nav ul li:nth-child(2).btn-active {
-  background-color: #5872bc;
+  background-color: #e3db88;
   cursor: pointer;
 }
 nav ul li:nth-child(2).btn-active a {
@@ -266,10 +463,10 @@ nav ul li:nth-child(3).btn-active a {
   color: #a6bde8;
 }
 .modal-pages:nth-of-type(2) {
-  border-color: #5872bc;
+  border-color: #e3db88;
 }
 .modal-pages:nth-of-type(2) .box1-title {
-  color: #5872bc;
+  color: #e3db88;
 }
 .modal-pages:nth-of-type(3) {
   border-color: #6cb4a3;

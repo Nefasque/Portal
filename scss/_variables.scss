@@ -1,7 +1,7 @@
 // color scheme
 $color0: #2c1c2c;
 $color1: #a6bde8;
-$color2: #5872bc;
+$color2: #e3db88;
 $color3: #6cb4a3;
 $color4: #e38b88;
 $color5: #bd2c4c;
@@ -12,6 +12,14 @@ $gray1: #332133;
 $gray2: #3f2a3f;
 $gray3: #4f314f;
 $gray4: #7a517a;
+
+$red: $color5;
+$yellow: $color2;
+$blue: $color1;
+$green: $color3;
+$purple: $color6;
+$orange: $color4;
+$pink: #f5a5cd;
 
 @mixin nav-btn($color: $color7) {
   border: 2px solid $color;

@@ -1,5 +1,3 @@
-
-
 /**
  * Navigation behavior controller and main content
  * */
