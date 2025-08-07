@@ -449,11 +449,11 @@ nav ul li:nth-child(3).btn-active a {
   background-color: #2c1c2c;
   display: none;
 }
-.modal-pages div {
+.modal-pages div.box1-content {
   overflow: scroll;
   max-height: 83vh;
 }
-.modal-pages div::-webkit-scrollbar {
+.modal-pages div.box1-content::-webkit-scrollbar {
   display: none;
 }
 .modal-pages:first-child {
@@ -484,10 +484,66 @@ nav ul li:nth-child(3).btn-active a {
     height: 90%;
     background-color: #2c1c2c;
   }
-  .modal-pages div {
+  .modal-pages div.box1-content {
     overflow: scroll;
     height: 90%;
   }
+}
+#porfolio .box1-content:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-project {
+  border: 2px solid #e3db88;
+  width: 90%;
+  max-width: 30rem;
+}
+.card-project .box1-title {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+  margin: 0;
+  padding: 0;
+}
+.card-project .box1-title h2 {
+  background-color: #2c1c2c;
+  padding: 0 10px;
+}
+.card-project .box1-title div {
+  padding: 0 10px;
+  background-color: #2c1c2c;
+}
+.card-project .box1-title div a {
+  padding: 0 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #e3db88;
+}
+.card-project .box1-title div a:hover {
+  color: #9575cd;
+}
+.card-project .box1-title .a-github::before {
+  content: "\f02a4";
+}
+.card-project .box1-title .a-play::before {
+  content: "\e602";
+}
+.card-project div.box1-content {
+  display: flex;
+  justify-content: space-between;
+}
+.card-project div.box1-content img {
+  width: 30%;
+  min-width: 5rem;
+  max-width: 6rem;
+  max-height: 5rem;
+  object-fit: cover;
+  margin-right: 2rem;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
