@@ -201,6 +201,109 @@ li.li-paint span::before {
   content: "\f1fc";
 }
 
+/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+code.hljs {
+  padding: 3px 5px;
+}
+
+.hljs {
+  background: #332133;
+  color: #d2d7de;
+}
+
+.hljs-comment {
+  color: #7a517a;
+}
+
+.hljs-punctuation,
+.hljs-tag {
+  color: #332133;
+}
+
+.hljs-tag .hljs-attr,
+.hljs-tag .hljs-name {
+  color: #6cb4a3;
+}
+
+.hljs-attribute,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-name,
+.hljs-selector-tag {
+  font-weight: 700;
+  color: #e38b88;
+}
+
+.hljs-deletion,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
+  color: #6cb4a3;
+}
+
+.hljs-section,
+.hljs-title {
+  color: #a6bde8;
+  font-weight: 700;
+}
+
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+  color: #e38b88;
+}
+
+.hljs-number,
+.hljs-literal {
+  color: #bd2c4c;
+}
+
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+  color: #bd2c4c;
+}
+
+.hljs-meta {
+  color: #a6bde8;
+}
+
+.hljs-meta .hljs-string {
+  color: #6cb4a3;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -228,10 +331,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 h3 {
+  font-size: 0.9em;
+}
+
+pre {
   font-size: 1em;
 }
 
@@ -240,7 +347,7 @@ h3 {
     font-size: 1.5em;
   }
   h2 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   p,
   a {
@@ -294,6 +401,7 @@ aside {
 nav {
   width: 100%;
   height: auto;
+  margin-top: 23px;
 }
 nav ul li {
   margin: auto;
@@ -312,13 +420,6 @@ nav ul li:first-child {
 nav ul li:first-child a {
   color: #a6bde8;
 }
-nav ul li:first-child:hover {
-  background-color: #a6bde8;
-  cursor: pointer;
-}
-nav ul li:first-child:hover a {
-  color: #2c1c2c;
-}
 nav ul li:first-child.btn-active {
   background-color: #a6bde8;
   cursor: pointer;
@@ -331,13 +432,6 @@ nav ul li:nth-child(2) {
 }
 nav ul li:nth-child(2) a {
   color: #e3db88;
-}
-nav ul li:nth-child(2):hover {
-  background-color: #e3db88;
-  cursor: pointer;
-}
-nav ul li:nth-child(2):hover a {
-  color: #2c1c2c;
 }
 nav ul li:nth-child(2).btn-active {
   background-color: #e3db88;
@@ -352,13 +446,6 @@ nav ul li:nth-child(3) {
 nav ul li:nth-child(3) a {
   color: #6cb4a3;
 }
-nav ul li:nth-child(3):hover {
-  background-color: #6cb4a3;
-  cursor: pointer;
-}
-nav ul li:nth-child(3):hover a {
-  color: #2c1c2c;
-}
 nav ul li:nth-child(3).btn-active {
   background-color: #6cb4a3;
   cursor: pointer;
@@ -367,6 +454,29 @@ nav ul li:nth-child(3).btn-active a {
   color: #2c1c2c;
 }
 
+@media (min-width: 576px) {
+  nav ul li:first-child:hover {
+    background-color: #a6bde8;
+    cursor: pointer;
+  }
+  nav ul li:first-child:hover a {
+    color: #2c1c2c;
+  }
+  nav ul li:nth-child(2):hover {
+    background-color: #e3db88;
+    cursor: pointer;
+  }
+  nav ul li:nth-child(2):hover a {
+    color: #2c1c2c;
+  }
+  nav ul li:nth-child(3):hover {
+    background-color: #6cb4a3;
+    cursor: pointer;
+  }
+  nav ul li:nth-child(3):hover a {
+    color: #2c1c2c;
+  }
+}
 @media (max-width: 576px) {
   nav {
     width: 80%;
@@ -378,17 +488,18 @@ nav ul li:nth-child(3).btn-active a {
   }
   nav ul li {
     width: 100%;
-    margin: 10px;
+    min-width: 1rem;
+    margin: 10px 5px;
   }
 }
 .about {
   width: 90%;
-  height: 70%;
+  height: 50%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .box1 {
@@ -544,6 +655,123 @@ nav ul li:nth-child(3).btn-active a {
   object-fit: cover;
   margin-right: 2rem;
   height: auto;
+}
+
+.blog-article {
+  border-color: #6cb4a3;
+  padding-bottom: 1.5rem;
+  max-width: 35rem;
+  margin: 2rem auto;
+}
+.blog-article .box1-title {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+}
+.blog-article .box1-title h2 {
+  background-color: #2c1c2c;
+  padding: 0 10px;
+}
+.blog-article .box1-title time {
+  background-color: #2c1c2c;
+  padding: 0 10px;
+  font-size: 0.8em;
+  line-height: 2em;
+  letter-spacing: 0.2em;
+}
+.blog-article div.box1-content {
+  padding: 0 3px;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  max-height: 5rem;
+  overflow: hidden;
+}
+.blog-article div.box1-content.expanded {
+  max-height: 100%;
+  overflow: visible;
+}
+.blog-article .read-more {
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 5px 10px;
+  float: right;
+  position: relative;
+  bottom: -10px;
+  background-color: #6cb4a3;
+  color: #2c1c2c;
+}
+.blog-article .read-more:before {
+  content: "Read less";
+  width: 100%;
+}
+.blog-article .read-more.active:before {
+  content: "Read more";
+}
+
+.article-content img {
+  width: 100%;
+  max-width: 20rem;
+  margin: auto;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+  padding: 5px 0px;
+}
+.article-content p {
+  padding: 10px 0;
+  line-height: 1.5em;
+}
+.article-content hr {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #6cb4a3;
+}
+.article-content ol {
+  font-size: 0.8em;
+  margin-left: 2rem;
+  padding: 10px 0;
+}
+.article-content ol li {
+  padding: 5px 0;
+}
+.article-content ul {
+  font-size: 0.8em;
+  margin-left: 1rem;
+  padding: 10px 0;
+  list-style: circle;
+}
+.article-content ul li {
+  padding: 5px 0;
+}
+.article-content blockquote {
+  padding: 0 0.3rem 0.3rem 0.9rem;
+  margin: 1rem 0;
+  border-left: 2px solid #6cb4a3;
+  background-color: #332133;
+  width: 90%;
+  color: #6cb4a3;
+}
+.article-content pre {
+  margin: 1rem 0;
+  background-color: #332133;
+  width: 95%;
+  overflow-y: scroll;
+}
+.article-content pre::-webkit-scrollbar {
+  display: none;
+}
+.article-content strong {
+  color: #6cb4a3;
+}
+.article-content a {
+  color: #9575cd;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

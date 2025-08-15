@@ -1,0 +1,90 @@
+@use "variables";
+
+/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+code.hljs {
+  padding: 3px 5px;
+}
+.hljs {
+  background: variables.$gray1;
+  color: variables.$color7;
+}
+.hljs-comment {
+  color: variables.$gray4;
+}
+.hljs-punctuation,
+.hljs-tag {
+  color: variables.$gray1;;
+}
+.hljs-tag .hljs-attr,
+.hljs-tag .hljs-name {
+  color: variables.$color3;;
+}
+.hljs-attribute,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-name,
+.hljs-selector-tag {
+  font-weight: 700;
+  color: variables.$color4;
+}
+.hljs-deletion,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
+  color: variables.$color3;
+}
+.hljs-section,
+.hljs-title {
+  color: variables.$color1;
+  font-weight: 700;
+}
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+  color: variables.$color4;
+}
+
+.hljs-number,
+.hljs-literal {
+  color: variables.$color5;;
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+  color: variables.$color5;
+}
+.hljs-meta {
+  color: variables.$color1;
+}
+.hljs-meta .hljs-string {
+  color: variables.$color3;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: 700;
+}

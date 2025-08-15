@@ -14,12 +14,14 @@ $gray3: #4f314f;
 $gray4: #7a517a;
 
 $red: $color5;
-$yellow: $color2;
+$yellow: $color2; 
 $blue: $color1;
 $green: $color3;
 $purple: $color6;
 $orange: $color4;
 $pink: #f5a5cd;
+
+
 
 @mixin nav-btn($color: $color7) {
   border: 2px solid $color;
