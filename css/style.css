@@ -386,11 +386,11 @@ aside {
   main {
     position: absolute;
     width: 95%;
-    height: 80%;
+    height: 85%;
     margin: auto;
     left: 0;
     right: 0;
-    top: 5rem;
+    top: 3.5rem;
   }
   aside {
     position: absolute;
@@ -763,7 +763,7 @@ nav ul li:nth-child(3).btn-active a {
 .article-content hr {
   width: 90%;
   margin: auto;
-  border: 1px solid #6cb4a3;
+  border: 1px solid #7a517a;
 }
 .article-content ol {
   font-size: 0.8em;
