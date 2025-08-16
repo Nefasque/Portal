@@ -46,7 +46,7 @@ pre {
   }
   p,
   a {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
@@ -360,15 +360,51 @@ nav {
   div.box1-content {
     display: flex;
     justify-content: space-between;
+    aling-items: center;
+
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 
     img {
       width: 30%;
-      min-width: 5rem;
-      max-width: 6rem;
+      max-width: 5rem;
       max-height: 5rem;
       object-fit: cover;
       margin-right: 2rem;
       height: auto;
+    }
+  }
+
+  .tag-project {
+    position: relative;
+    float: left;
+    right: 0;
+    top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    height: 20px;
+
+    li {
+      background-color: variables.$color0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      padding: 0 5px;
+    }
+    li:first-child {
+      padding-left: 10px;
+    }
+    li:last-child {
+      padding-right: 10px;
+    }
+  }
+  @media (max-width: 576px) {
+    .tag-project {
+      top: -10px;
     }
   }
 }
