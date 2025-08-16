@@ -94,7 +94,7 @@ const renderAticle = async () => {
 	let tb = true
 	let i = 1;
 	while (tb) {
-		const article = await fetch(`../markdwon/t-${i++}.md`)
+		const article = await fetch(`./markdwon/t-${i++}.md`)
 			.then(response => {
 				if (!response.ok) {
 					tb = false
