@@ -21,8 +21,8 @@ const navigationBehavior = () => {
 	const modal_page = document.querySelectorAll(".modal-pages");
 
 	if (window.screen.width > 576) {
-		modal_page[1].classList.add("active");
-		li[1].classList.add("btn-active");
+		modal_page[0].classList.add("active");
+		li[0].classList.add("btn-active");
 	}
 
 	li.forEach((el, i) => {
@@ -58,8 +58,8 @@ const navigationBehavior = () => {
 			})
 
 			if (noneActivated) {
-				modal_page[2].classList.add("active");
-				li[2].classList.add("btn-active");
+				modal_page[0].classList.add("active");
+				li[0].classList.add("btn-active");
 			}
 		}
 	})

@@ -360,29 +360,33 @@ nav {
   div.box1-content {
     display: flex;
     justify-content: space-between;
-    aling-items: center;
+    align-items: center;
 
     padding-bottom: 0px;
     margin-bottom: 0px;
 
     img {
-      width: 30%;
-      max-width: 5rem;
-      max-height: 5rem;
+      width: 20%;
+      max-width: 30%;
       object-fit: cover;
       margin-right: 2rem;
-      height: auto;
+      display: block;
+    }
+    p {
+      display: block;
+      width: 70%;
+      float:center;
     }
   }
 
   .tag-project {
     position: relative;
-    float: left;
+    float: right;
     right: 0;
     top: 20px;
     margin: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     width: 40%;
     height: 20px;
